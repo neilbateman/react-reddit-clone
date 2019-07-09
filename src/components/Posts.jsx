@@ -5,18 +5,18 @@ import PostProperties from './PostProperties';
 const userPosts = [ 
     {
         title: 'First Post',
-        comment: 'Hello',
+        comment: 'Eaque similique quasi labore tenetur. Adipisci nulla sed ea delectus eum, ipsam voluptatum quia ut distinctio nam fugit aliquam, deserunt totam laborum.', 
         url: 'hello.com'
     },
     {
         title: 'First Post',
-        comment: 'Hello',
+        comment: 'Eaque similique quasi labore tenetur. Adipisci nulla sed ea delectus eum, ipsam voluptatum quia ut distinctio nam fugit aliquam, deserunt totam laborum.',
         url: 'hello.com'
     },
     
     {
         title: 'First Post',
-        comment: 'Hello',
+        comment: 'Eaque similique quasi labore tenetur. Adipisci nulla sed ea delectus eum, ipsam voluptatum quia ut distinctio nam fugit aliquam, deserunt totam laborum.',
         url: 'hello.com'
     }
     

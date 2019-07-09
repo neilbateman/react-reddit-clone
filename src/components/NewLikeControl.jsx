@@ -12,15 +12,15 @@ class NewLikeControl extends React.Component {
     }
 
     incrementLike() {
-        let newCount = this.state.count +1;
+        let newCount = this.state.count + 1;
         this.setState({
             count: newCount
         })
     }
 
     decrementLike() {
-        
-        let downCount = this.state.count -1;
+
+        let downCount = this.state.count - 1;
         this.setState({
             count: downCount
         })
@@ -33,11 +33,11 @@ class NewLikeControl extends React.Component {
                 <style jsx>{`
                 .button-container {
                     margin-top: 70%;
-                    border: 1px solid blue;
+                    border: 1px solid black;
                     flex-direction: column;
                     display: flex;
                     justify-content: space-between;
-
+                    
                 }
                 
                 
@@ -46,16 +46,16 @@ class NewLikeControl extends React.Component {
                 </style>
                 <div className="button-container">
                     <div className="like-button-container">
-                <button onClick={this.incrementLike}>Likes</button>
+                        <button onClick={this.incrementLike}>Likes</button>
                     </div>
-                <p>{this.state.count}</p>
+                    <p>{this.state.count}</p>
                     <div className="unlike-button-container">
-                <button onClick={this.decrementLike}>Unlike</button>
+                        <button onClick={this.decrementLike}>Unlike</button>
                     </div>
+                </div>
+
             </div>
-            
-            </div>
-          
+
         );
     }
 }
