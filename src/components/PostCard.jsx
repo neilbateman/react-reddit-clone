@@ -9,11 +9,9 @@ function Card() {
         <style jsx>{`
         
         .card-container {
-            border: 1px solid red;
-            margin: 0;
             margin-top: 2%;
             display: flex;
-            width: 90%;
+            width: 50%;
         }
    
     
@@ -21,12 +19,6 @@ function Card() {
         `}</style>
 
         <div className="card-container">
-            <div className="vote-container">
-                <div className="like-button-container">
-                  
-                </div>
-            </div>
-
             <div className="comment-container">
                 <Posts />
             </div>

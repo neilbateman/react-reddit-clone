@@ -8,45 +8,32 @@ function PostProperties(props){
             <style jsx> {`
             
             .post-property-container {
-                border: 1px solid blue;
                 display: flex;
                 margin: 5%;
                 flex-direction: row;
-                width: 90%;
+                // width: 90%;
             }
 
             .like-control-container {
-                // border: 1px solid red;
             }
 
             .user-comments {
-                border: 1px solid black;
-                flex-grow: 1;
-                // padding: 50px;
-            }
-
-            .new-post-container {
+                // flex-grow: 1;
                 
             }
 
             `}</style>
               
             <div className="post-property-container">
+                <div className="like-control-container">
+                    <NewLikeControl />
+                </div>
 
-                {/* <div className="new-post-container"> */}
-                    <div className="like-control-container">
-                        <NewLikeControl />
-                    </div>
-
-                    <div className="user-comments">
-                        <h4>{props.title}</h4>
-                        <h5>{props.comment}</h5>
-                        <h5>{props.url}</h5>
-                    </div>
-
-                {/* </div> */}
-
-                
+                <div className="user-comments">
+                    <h4>{props.title}</h4>
+                    <h5>{props.comment}</h5>
+                    <h5>{props.url}</h5>
+                </div>
             </div> 
               
         </div>

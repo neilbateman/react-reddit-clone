@@ -1,6 +1,6 @@
 import React from 'react';
 import PostProperties from './PostProperties';
-
+import Paper from '@material-ui/core/Paper';
 
 const userPosts = [ 
     {
@@ -25,12 +25,16 @@ const userPosts = [
 function Posts() {
     return (
         <div>
-            {userPosts.map((post, index) =>
-                <PostProperties title={post.title}
-                comment={post.comment}
-                url={post.url}
-                key={index} />
+           
+            {userPosts.map((post, index) =><Paper>
+            <PostProperties title={post.title}
+            comment={post.comment}
+            url={post.url}
+            key={index} /></Paper>
             )}
+            
+           
+          
         </div>
     );
 }
