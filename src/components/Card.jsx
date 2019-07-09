@@ -1,5 +1,6 @@
 import React from 'react';
 import NewLikeControl from './NewLikeControl';
+import Posts from './Posts';
 
 function Card() {
     return (
@@ -15,10 +16,11 @@ function Card() {
         }
 
         .vote-container {
-            border: 1px solid red;
+            // border: 1px solid red;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+         
         }
 
         .like-button-container {
@@ -43,14 +45,10 @@ function Card() {
                 <div className="like-button-container">
                     <NewLikeControl />
                 </div>
-
-                <div className="unlike-button-container">
-                    <button>Unlike</button>
-                </div>
             </div>
 
             <div className="comment-container">
-                <p>text text text text text text text</p>
+                <Posts />
             </div>
         </div>
 
