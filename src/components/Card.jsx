@@ -1,4 +1,5 @@
 import React from 'react';
+import NewLikeControl from './NewLikeControl';
 
 function Card() {
     return (
@@ -40,7 +41,7 @@ function Card() {
         <div className="card-container">
             <div className="vote-container">
                 <div className="like-button-container">
-                    <button>Like</button>
+                    <NewLikeControl />
                 </div>
 
                 <div className="unlike-button-container">
